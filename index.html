@@ -1,21 +1,138 @@
 <!doctype html>
-<html>
+<html lang="ja">
 <head>
-<meta charset="UTF-8">
-<title>トップページ</title>
-<link href="top.css" rel="stylesheet" type="text/css">
+<meta charset="utf-8">
+<title>総合課題(1)</title>
+<link href="basic2.css" rel="stylesheet" type="text/css">
+<style>
+  body {
+    background-color: #470D0D;
+    color: white;
+  }
+
+  header {
+    text-align: center;
+    padding: 20px;
+    background-color: #5E1D1D;
+    color: white;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .big_box {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+  }
+
+  main {
+    flex: 3;
+    padding: 20px;
+  }
+
+  .r_aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #5E1D1D;
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3E0B0B;
+    color: white;
+  }
+
+  .cool-title {
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    font-size: 60px; 
+    color: white;
+    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+    letter-spacing: 2px;
+    text-align: center;
+  }
+</style>
 </head>
 
 <body>
-<h1>NSの講義</h1>
-<p>担当　中村直人</p>	
-<ul>
-  <li>
-    <a href="math.html">情報数学基礎</a></li>
-  <li>
-    <a href="CG.html">コンピュータグラフィックス</a></li>
-  <li>
-    <a href="VCD.html">ビジュアルコンテンツデザイン</a></li>
-</ul>
+<header>
+  <h1 class="cool-title">牛工大</h1>
+  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+  <p>
+    当店について<br>
+    当店は、しちりんを使った本格炭火焼肉店です。<br>
+    炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。<br>
+    オーダーは、タッチパネルから行ってください。<br>
+    会計は、キャッシュレス歓迎、キャッシュレスの場合は10％オフ。
+  </p>
+</header>
+
+<div class="big_box">
+  <main>
+    <article>
+      <h1>牛工大の特徴</h1>
+      <section>
+        <h2>特徴1：早い</h2>
+        <p>忙しい日も、サッと寄れて大満足。<br>焼き始めてすぐおいしい！待たせない焼肉。</p>
+      </section>
+      <section>
+        <h2>特徴2：安い</h2>
+        <p>財布に優しい贅沢、毎日でも通えるおいしさ。<br>学生から家族までみんな大満足！</p>
+      </section>
+      <section>
+        <h2>特徴3：うまい</h2>
+        <p>ジューシーさ極まる、焼き肉の真骨頂。<br>肉の旨みを逃さない秘伝のタレが決め手！</p>
+      </section>
+    </article>
+  </main>
+
+  <div class="r_aside">
+    <aside>
+      <h3>★お得な情報★</h3>
+      <p>今月のキャンペーン：<strong>全メニュー10％オフ！</strong></p>
+      <p>次回使えるクーポンコード：<strong>YAKINIKU2024</strong></p>
+    </aside>
+    <aside>
+      <h3>★カテゴリ一覧★</h3>
+      <ul>
+        <li><a href="#beef">牛肉メニュー</a></li>
+        <li><a href="#pork">豚肉メニュー</a></li>
+        <li><a href="#chicken">鶏肉メニュー</a></li>
+        <li><a href="#drinks">ドリンクメニュー</a></li>
+      </ul>
+    </aside>
+  </div>
+</div>
+
+<!-- 動画の追加 -->
+<section>
+  <h2>店内の雰囲気</h2>
+  <video controls autoplay loop>
+    <source src="焼肉yakiniku.index.mp4" type="video/mp4">
+    お使いのブラウザは動画タグをサポートしていません。
+  </video>
+</section>
+
+<footer>
+  <address>お問い合わせ：<a href="mailto:info@yakiniku.umai.up">info@yakiniku.umai.up</a></address>
+  <address>〒000-0000 焼肉市美食町1-2-3</address>
+  <address>電話番号: 000-456-7890</address>
+</footer>
 </body>
 </html>
