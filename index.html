@@ -1,228 +1,160 @@
 <!doctype html>
 <html lang="ja">
 <head>
-<meta charset="utf-8">
-<title>総合課題(1)</title>
-<link href="basic2.css" rel="stylesheet" type="text/css">
-<style>
-  body {
-    background-color: #470D0D;
-    color: white;
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>総合課題(1) - 牛工大</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #470D0D;
+      color: white;
+      font-family: 'Roboto', sans-serif;
+    }
 
-  header {
-    text-align: center;
-    padding: 20px;
-    background-color: #5E1D1D;
-    color: white;
-  }
+    .cool-title {
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      font-size: 60px;
+      color: white;
+      text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+      letter-spacing: 2px;
+    }
 
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-  }
+    header {
+      background-color: #5E1D1D;
+      padding: 20px;
+      text-align: center;
+    }
 
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
+    footer {
+      background-color: #3E0B0B;
+      padding: 20px;
+      text-align: center;
+    }
 
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
+    a {
+      color: #FFD700;
+    }
 
-  .big_box {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-  }
+    a:hover {
+      color: #FFA500;
+    }
 
-  main {
-    flex: 3;
-    padding: 20px;
-  }
-
-  .r_aside {
-    flex: 1;
-    padding: 20px;
-    background-color: #5E1D1D;
-    color: white;
-  }
-
-  footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #3E0B0B;
-    color: white;
-  }
-
-  .cool-title {
-    font-family: 'Impact', 'Arial Black', sans-serif;
-    font-size: 60px; 
-    color: white;
-    text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
-    letter-spacing: 2px;
-    text-align: center;
-  }
-
-  body, p {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-  }
-
-  h1, h2 {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    color: #FFD700;
-  }
-
-  a {
-    color: #FFD700;
-  }
-
-  a:hover {
-    color: #FFA500;
-  }
-</style>
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    .video-container {
+      max-width: 100%;
+      margin-top: 20px;
+    }
+    
+    .video-container video {
+      width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 
 <body>
-<header>
-  <h1 class="cool-title">牛工大</h1>
-  <p>中途半端なものは提供しません。一流の肉を格安で！</p>
-  <p>
-    当店について<br>
-    当店は、しちりんを使った本格炭火焼肉店です。<br>
-    炭火焼肉でも煙などの排気には最新鋭の換気システムを導入しています。<br>
-    オーダーは、タッチパネルから行ってください。<br>
-    会計は、キャッシュレス歓迎、キャッシュレスの場合は10％オフ。
-  </p>
-</header>
+  <header class="text-center">
+    <h1 class="cool-title">牛工大</h1>
+    <p>中途半端なものは提供しません。一流の肉を格安で！</p>
+  </header>
 
-<div class="big_box">
-  <main>
-    <article>
-      <h1>牛工大の特徴</h1>
-      <section>
-        <h2>特徴1：早い</h2>
-        <p>忙しい日も、サッと寄れて大満足。<br>焼き始めてすぐおいしい！待たせない焼肉。</p>
-      </section>
-      <section>
-        <h2>特徴2：安い</h2>
-        <p>財布に優しい贅沢、毎日でも通えるおいしさ。<br>学生から家族までみんな大満足！</p>
-      </section>
-      <section>
-        <h2>特徴3：うまい</h2>
-        <p>ジューシーさ極まる、焼き肉の真骨頂。<br>肉の旨みを逃さない秘伝のタレが決め手！</p>
-      </section>
-    </article>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">牛工大</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#beef">牛肉</a></li>
+          <li class="nav-item"><a class="nav-link" href="#pork">豚肉</a></li>
+          <li class="nav-item"><a class="nav-link" href="#chicken">鶏肉</a></li>
+          <li class="nav-item"><a class="nav-link" href="#drinks">ドリンク</a></li>
+          <li class="nav-item"><a class="nav-link" href="#video">動画</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <article>
-      <h2>★メニュー★</h2>
-      <section id="beef">
-        <h1>☆牛肉☆</h1>
-        <p>・工大カルビ<br>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
-        <p><img src="素材/koudai_karubi.jpg" width="450" height="350" alt=""/></p>
-        <p>・カルビ<br>牛肉のうまみ、甘味と香りが楽しめます。最も人気のある定番メニューのひとつ。</p>
-        <p><img src="素材/karubi.jpg" width="450" height="350" alt=""/></p>
-        <p>・ハラミ<br>国民のアイドル！お店一押し。</p>
-        <p><img src="素材/harami.jpg" width="450" height="350" alt=""/></p>
-      </section>
-		  
-      <section id="pork">  
-        <h1>☆豚肉☆</h1>
-        <p>・トンたん塩<br>コリコリ食感を楽しむ。牛タンでなくても満足できます。</p>
-        <p><img src="素材/buta_tan.jpg" width="450" height="350" alt=""/></p>
-        <p>・やみつき豚ホルモン<br>この食感クセになる。</p>
-        <p><img src="素材/buta_horumon.jpg" width="450" height="350" alt=""/></p>
-      </section>
-		  
-      <section id="chicken">  
-        <h1>☆鶏肉☆</h1>
-        <p>・ハラミ付きヤゲン<br>ジューシーなハラミがついた、コリコリの軟骨。</p>
-        <p><img src="素材/tori_yagen.jpg" width="450" height="350" alt=""/></p>
-        <p>・とりもも<br>お子様にも人気。やわらかくてジューシー。</p>
-        <p><img src="素材/tori_momo.jpg" width="450" height="350" alt=""/></p>
-      </section>
-		  
-      <section id="drinks">	  
-        <h2>★ドリンクメニュー★</h2>
-        <h1>☆ビール☆</h1>
-        <p>・アサヒ スーパードライ</p>
-        <p><img src="素材/beer.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆ハイボール☆</h1>
-        <p>・ハイボール　・巨峰ハイボール</p>
-        <p>・白桃ハイボール　・柚子ハイボール</p>
-        <p><img src="素材/haiboru.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆サワー☆</h1>
-        <p>・ウーロンハイ　・緑茶ハイ</p>
-        <p>・巨峰サワー　・レモンサワー</p>
-        <p>・白桃サワー　・柚子サワー</p>
-        <p><img src="素材/sawa.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆焼酎☆</h1>
-        <p>・とうと（芋）　・一刻者（芋）</p>
-        <p>・やんや（麦）</p>
-        
-        <h1>☆日本酒☆</h1>
-        <p>・豪快　熱燗[270ml徳利]　・八海山　冷酒[一合]</p>
-        <p><img src="素材/nihonsyu.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆カクテル☆</h1>
-        <p>・カシスウーロン　・カシスオレンジ</p>
-        <p>・カシスソーダ　・ファジーネーブル</p>
-        <p>・レゲエパンチ</p>
-        <p><img src="素材/kakuteru.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆ワイン☆</h1>
-        <p>・グラスワイン　赤　・グラスワイン　白</p>
-        <p><img src="素材/wine.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆梅酒☆</h1>
-        <p>・梅酒　ロック　・梅酒　ソーダ割り</p>
-        <p><img src="素材/umesyu.png" width="350" height="350" alt=""/></p>
-        
-        <h1>☆ノンアルコール☆</h1>
-        <p>アサヒ　ドライゼロ</p>
-        <p><img src="素材/beerzero.png" width="350" height="350" alt=""/></p>
-      </section>
-		<video controls autoplay loop>
-    <source src="素材/焼肉yakiniku.mp4" type="video/mp4">
-    <source src="素材/焼肉yakiniku.webm" type="video/webm">
-    <source src="素材/焼肉yakiniku.ogv" type="video/ogg">
-    お使いのブラウザは動画タグをサポートしていません。
-</video>
-    </article>
-  </main>
-	
-  <div class="r_aside">
-    <aside>
-      <h3>★お得な情報★</h3>
-      <p>今月のキャンペーン：<strong>全メニュー10％オフ！</strong></p>
-      <p>次回使えるクーポンコード：<strong>YAKINIKU2024</strong></p>
-    </aside>
+  <div class="container my-4">
+    <div class="row">
+      <!-- Main content -->
+      <main class="col-lg-9">
+        <article>
+          <h1>牛工大の特徴</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <h2>特徴1：早い</h2>
+              <p>忙しい日も、サッと寄れて大満足。<br>焼き始めてすぐおいしい！待たせない焼肉。</p>
+            </div>
+            <div class="col-md-4">
+              <h2>特徴2：安い</h2>
+              <p>財布に優しい贅沢、毎日でも通えるおいしさ。<br>学生から家族までみんな大満足！</p>
+            </div>
+            <div class="col-md-4">
+              <h2>特徴3：うまい</h2>
+              <p>ジューシーさ極まる、焼き肉の真骨頂。<br>肉の旨みを逃さない秘伝のタレが決め手！</p>
+            </div>
+          </div>
+        </article>
 
-    <aside>
-      <h3>★カテゴリ一覧★</h3>
-      <ul>
-        <li><a href="#beef">牛肉メニュー</a></li>
-        <li><a href="#pork">豚肉メニュー</a></li>
-        <li><a href="#chicken">鶏肉メニュー</a></li>
-        <li><a href="#drinks">ドリンクメニュー</a></li>
-      </ul>
-    </aside>
+        <!-- Beef Menu -->
+        <article id="beef" class="mt-5">
+          <h2>☆牛肉☆</h2>
+          <p>・工大カルビ<br>骨と骨の間の旨味の詰まった部位を丁寧にカット</p>
+          <p><img src="../素材/koudai_karubi.jpg" alt="工大カルビ"></p>
+          <p>・カルビ<br>牛肉のうまみ、甘味と香りが楽しめます。</p>
+          <p><img src="../素材/karubi.jpg" alt="カルビ"></p>
+        </article>
+
+        <!-- Drinks Menu -->
+        <article id="drinks" class="mt-5">
+          <h2>★ドリンクメニュー★</h2>
+          <section>
+            <h3>☆ビール☆</h3>
+            <p>アサヒ スーパードライ</p>
+            <p><img src="../素材/beer.png" alt="ビール"></p>
+          </section>
+          <section>
+            <h3>☆サワー☆</h3>
+            <p>ウーロンハイ、レモンサワー、白桃サワーなど</p>
+            <p><img src="../素材/sawa.png" alt="サワー"></p>
+          </section>
+        </article>
+
+        <article id="video" class="mt-5 video-container">
+          <h2>★プロモーション動画★</h2>
+          <video controls>
+            <source src="../素材/焼肉yakiniku.mp4" type="video/mp4">
+            <source src="../素材/焼肉yakiniku.webm" type="video/webm">
+            <source src="../素材/焼肉yakiniku.ogv" type="video/ogg">
+            お使いのブラウザは動画タグをサポートしていません。
+          </video>
+        </article>
+      </main>
+
+      <!-- Sidebar -->
+      <aside class="col-lg-3 bg-secondary text-white p-3">
+        <h3>★お得な情報★</h3>
+        <p>今月のキャンペーン：<strong>全メニュー10％オフ！</strong></p>
+        <p>次回使えるクーポンコード：<strong>YAKINIKU2024</strong></p>
+      </aside>
+    </div>
   </div>
-</div>
 
-<footer>
-  <address>お問い合わせ：<a href="mailto:info@yakiniku.umai.up">info@yakiniku.umai.up</a></address>
-  <address>〒000-0000 焼肉市美食町1-2-3</address>
-  <address>電話番号: 000-456-7890</address>
-</footer>
+  <footer>
+    <p>お問い合わせ：<a href="mailto:info@yakiniku.umai.up">info@yakiniku.umai.up</a></p>
+    <p>〒000-0000 焼肉市美食町1-2-3</p>
+    <p>電話番号: 000-456-7890</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
